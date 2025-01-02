@@ -37,24 +37,8 @@ class BinarySearchTree {
     return this.findMinNode(this.rootNode).data;
   }
 
-  // findMinNode(node) {
-  //   if (node.left === null) {
-  //     return node;
-  //   } else {
-  //     return this.findMinNode(node.left);
-  //   }
-  // }
-
   max() {
     return this.findMaxNode(this.rootNode).data;
-  }
-
-  findMaxNode(node) {
-    if (node.right === null) {
-      return node;
-    } else {
-      return this.findMaxNode(node.right);
-    }
   }
 
 }
