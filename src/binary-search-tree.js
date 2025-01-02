@@ -29,9 +29,8 @@ class BinarySearchTree {
     return this.search(this.rootNode, data);
   }
 
-  remove(/* data */) {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+  remove(data) {
+    this.rootNode = this.removeNode(this.rootNode, data);
   }
 
   min() {
