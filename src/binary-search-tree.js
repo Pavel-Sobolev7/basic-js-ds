@@ -68,8 +68,24 @@ class BinarySearchTree {
     this.rootNode = this.removeNode(this.rootNode, data);
   }
 
+  findMinNode(node) {
+    if (node.left === null) {
+      return node;
+    } else {
+      return this.findMinNode(node.left);
+    }
+  }
+
   min() {
     return this.findMinNode(this.rootNode).data;
+  }
+
+  findMaxNode(node) {
+    if (node.right === null) {
+      return node;
+    } else {
+      return this.findMaxNode(node.right);
+    }
   }
 
   max() {
