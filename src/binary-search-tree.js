@@ -34,8 +34,7 @@ class BinarySearchTree {
   }
 
   min() {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+    return this.findMinNode(this.rootNode).data;
   }
 
   max() {
