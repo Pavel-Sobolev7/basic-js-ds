@@ -1,5 +1,5 @@
 const { NotImplementedError } = require('../extensions/index.js');
-
+const { ListNode } = require('../extensions/list-node.js');
 // const { ListNode } = require('../extensions/list-node.js');
 
 /**
@@ -16,8 +16,7 @@ const { NotImplementedError } = require('../extensions/index.js');
 class Queue {
 
   getUnderlyingList() {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+    return this.head;
   }
 
   enqueue(/* value */) {
